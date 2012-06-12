@@ -1,0 +1,149 @@
+
+//================================ CLASES NORMALES
+
+.marginAuto{
+	 margin:0 auto;
+}
+
+ .lft{
+      float: left;
+      display: block;
+    }
+
+    .rgt{
+       float: right;
+       display: block;
+    }
+
+    .tlf{
+       text-align: left;
+    }
+
+    .trg{
+       text-align: right;
+    }
+
+    .tlg(@val){
+        text-align:@val;
+    }
+
+     .mayusculas{
+ text-transform:uppercase;
+ }
+
+.overAuto{
+	 overflow:auto ;
+}
+
+.overHidden{
+	  overflow-x:hidden;
+	  overflow-y:hidden;
+}
+
+.formulario-pila{
+
+   *{
+      display:block !important;
+      outline:none;
+   }
+	    
+}
+
+
+//================================ MIXINS
+
+.boxs(@val){
+	
+	 -webkit-box-shadow: @val;
+	 -moz-box-shadow: @val;
+
+}
+
+.opac(@val){
+	
+	  opacity:@val;
+	  @val1: @val*100;
+	  filter: alpha(opacity=@val1);
+
+}
+
+.dim(@w,@h){
+	
+	width:@w;
+	height:@h;
+}
+
+.back(@val){
+	
+	background: @val;
+}
+
+
+
+.col(@val){
+	
+	  color: @val;
+}
+
+
+
+.scoor(@coor){
+	  background-position: @coor !important;
+}
+
+.bold(@val){
+	  font-weight:@val;
+}
+
+.ff(@val){
+	   font-family:@val;
+}
+
+.bgc(@val){
+	  background-color:@val;
+}
+
+.lh(@val){
+	  line-height:@val;
+}
+
+.fsiz(@val){
+	 font-size:@val;
+}
+
+.tsha(@val){
+	  text-shadow:@val;
+}
+
+.grad(@de,@hasta,@per,@_per){
+	    background-image: -webkit-linear-gradient(top, @de @per,@hasta @_per);
+		background-image: -moz-linear-gradient(top, @de @per,@hasta @_per);
+		background-image: -khtml-gradient(linear,left top,left bottom,from( @de ),to @hasta)  !important;
+		background-image: -o-linear-gradient( @de,@hasta) !important ;
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@de, endColorstr=@hasta) !important;	
+}
+
+.curva(@val){
+
+	    border-radius: @val;
+
+}
+
+.pad(@val){
+	   padding:@val;
+}
+
+.posi(@val){
+	   position:@val;
+}
+
+.bord(@val){
+	   border:@val;
+}
+
+.cent-abs(@w,@h){
+	    top:50%;
+	    left:50%;
+	    margin-left: @w;
+	    margin-top: @h;
+}

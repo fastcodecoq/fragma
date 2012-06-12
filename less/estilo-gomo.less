@@ -1,0 +1,690 @@
+
+
+//======================================================= INICIALIZACIÓN
+
+
+@import "mixin.less";
+@import "vars.less";
+
+
+@font-face{
+ font-family: futuraBtc;
+ src: url("../fuentes/FuturaBtc.eot"); 
+}
+
+
+
+@font-face{
+
+    font-family: futuraBtc;
+    src: url("../fuentes/FuturaBtc.ttf") format("truetype");
+    font-weight:normal;
+
+}
+
+
+@font-face{
+ font-family: futuraStd;
+ src: url("../fuentes/FuturaStd.eot");
+ font-weight:normal;
+}
+
+@font-face{
+
+    font-family: futuraStd;
+    src: url("../fuentes/FuturaStd.ttf") format("truetype");
+    font-weight:normal;
+
+}
+
+
+
+//======================================================= ELEMENTS BASES
+
+
+html{
+	
+   overflow-x:hidden;
+
+}
+
+
+body{
+	
+	width: 100%;
+	margin:0 auto;
+
+}
+
+.cont{
+	width:963px;
+	margin:0 auto;
+	text-align:center;
+
+
+}
+
+
+//======================================================= CLASES VARIAS
+
+
+.item-fiesta{
+  
+                     position:relative;
+
+                            .dim(219px,345px);                            
+                            .lft;
+                            
+                             margin-left:5px;
+
+
+                          figure{
+                               .dim(205px,290px);
+                               .pad(7px);  
+                               .grad(#fdfdfd,#252222,20%,100%);
+
+                               a{                     
+                                     .overAuto;
+                                     .pad(1px);
+                                      padding-bottom:0;
+                                     .back(#acacac);
+                                                                        
+
+                                 img{
+                                    .dim(100%,290px);
+
+                                 }
+
+                               }
+
+
+                          }
+
+                    a{
+
+                           span{
+                            
+                           position:absolute;
+                           bottom:0;
+                           .back(#990066);
+                           .dim(100%,40px);
+                           .ff(futuraStd);
+                           .bold(normal);
+                           .col(@rosa-claro);
+                           .lh(2);
+                           .fsiz(20px);
+                           text-transform:uppercase;
+                           .curva(0 0 7px 7px);
+                                                    
+                            border-top:1px solid #ababab;
+
+                            }
+
+                            span:hover,span:focus{
+                                   .boxs(inset 0 1px 1px @rosa-claro);
+                              }
+
+                              span:active{
+                                    .boxs(inset 0 1px 2px #000);
+                              }
+
+
+
+                 }
+
+     }
+
+.sprite-{
+	
+	  background: url("../img/sprite-.png");
+	  background-position: -100px -100px;
+	  background-repeat:no-repeat;	  
+}
+
+.icono-social-{
+	    .dim(26px,26px);	     
+}
+
+.ytb{
+     
+      .scoor(0 1px);
+}
+
+.fbk{
+	.scoor(-90px 0);
+}
+
+.fsqr{
+	.scoor(-29px 0);
+}
+
+.twitter{
+	.scoor(-60px 0);
+}
+
+.logo-fragma{
+    .sprite-;
+    .dim(308px,97px);
+    .scoor(0 -86px);
+}
+
+.nota{
+   
+   .dim(100%,auto);
+   .back(@gris-nota);
+   .pad(30px 0 25px 0);
+   .overAuto;
+   .overHidden;
+
+      p{
+
+        .dim(262px,auto);
+        margin:0 auto;
+        .tlg(justify);
+
+        b{
+            font-style:italic;
+        }
+
+      }
+
+      a{ 
+
+            margin:20px 23px 0 0;
+           .col(@acolor);
+           .fsiz(15px);
+           .bold(bold);
+           .rgt;
+           .mayusculas;
+
+      }
+
+
+}
+
+.caja-cute{
+
+    .posi(relative);
+    .dim(305px,168px);    
+    .grad(#252222,#fdfdfd,20%,100%);    
+
+         img{
+            .dim(295px,158px);
+            .marginAuto;
+            margin-top:5px;
+         }
+
+         a{
+
+              .dim(100px,100px);
+              .posi(absolute);
+              .cent-abs(-50px,-50px);
+              .overAuto;          
+
+             span{                    
+                    .sprite-;
+                    .dim(100px,100px);
+                    .scoor(-213px -208px);
+                     top:0;
+             }
+
+         }
+
+}
+
+.submit-rosa{
+                          .dim(auto,auto);
+                          display:block;
+                          border:none;
+                          .back(@acolor);                              
+                          display:inline;                              
+                          padding:3px 3px 3px 131px !important;
+                          .mayusculas;
+                          .fsiz(14px);
+                          .col(white);
+                          .bold(bold);
+}
+
+//======================================================= CABEZA
+
+
+header{
+	
+
+	nav{
+
+	width:100%;
+
+	ul{
+	   .cont;
+	   .overAuto;
+
+
+             li{
+                 .lft;  
+                 margin: 0 2px 0 3px !important;
+
+                 a,a *{
+                    color:@acolor !important;
+                 }          
+
+  
+
+             }
+
+
+
+	  }
+
+ }
+
+ //======================================================= ICONOS SOCIALES Y REPRODUCTOR DE MÚSICA
+
+	#social-repro{
+	    
+	    .back(black);
+        padding: 7px 0 9px 0;        
+       
+
+         li{
+
+          span{
+                 
+                    .sprite-;
+                    .icono-social-;  
+
+
+              }
+               
+           span#sigueme{
+
+               .col(white);
+               .lft;                
+               padding-right:30px; 
+               .lh(2);           
+               .dim(auto,auto);
+               background:none;
+               font-family: Arial-black,sans-serif;
+               font-weight:bolder;
+
+            }  
+               
+
+         }
+
+
+	}
+
+  //======================================================= MENU PRINCIPAL
+
+	#menu-principal{
+        
+	   .back(url("../img/bg-tras.png"));
+     height:34px;
+
+     
+     *{ 
+       font-family: futuraStd;       
+       .fsiz(20px);
+       .lh(1.7);
+       color:#cccccc !important;
+
+       }
+
+     ul{          
+
+         li{
+
+            margin-left:22px !important;
+            padding:0 10px;
+
+             span.home{
+
+                     .sprite-;
+                     .dim(38px,34px);
+                     .bgc(#990066);   
+                     .scoor(-129px 0);                 
+
+             }
+
+             span.home:hover{
+                          .bgc(#ff0099);
+                      }
+     
+
+            a{
+               text-decoration:none;
+               text-transform:uppercase;
+
+               
+            }
+
+            a:hover{
+                  color:#ebebeb !important;
+                  .tsha(0 2px 3px rgb(100,100,100));
+               }
+
+           }
+
+         li:first-child{            
+
+            margin-left:0 !important;
+            margin-right:20px !important;                      
+
+         }
+
+         li:hover{
+             .back(url("../img/hover-menu.png"));
+         }
+
+       
+     }
+
+	}
+
+
+
+}
+
+//======================================================= INFO CENTRO
+
+div#centro{
+	
+ 
+   section#info-centro{
+        
+        .dim(100%,448px);
+        position:relative !important;
+
+   .cont{
+
+     position:realtive !important;
+     .overAuto;
+     .overHidden;
+        
+         .img-cont{
+
+            position:absolute;
+            .dim(963px,438px);
+            right:-100px;
+            bottom:10px;   
+            z-index:-1;
+
+            img.slide{
+                
+                 
+             }
+
+           }
+
+
+           div.fiestas-cont{
+
+             margin-top:50px;
+
+                      .item{
+
+                            .item-fiesta;
+
+                      }                    
+
+              }
+
+        }
+   }
+
+   //======================================================= INFO CENTRO BAJA
+
+   section#info-centro-baja{
+
+        .dim(100%,559px);
+        .back(#222 url("../img/bg-info-baja.jpg"));
+
+        div.cols-cont{
+
+          .pad(40px);
+
+        .overAuto;
+        .overHidden;
+
+             div.item{
+                 .lft;
+                 .dim(308px,auto);        
+                 margin-left:28px;     
+                 .overAuto;
+
+
+                 ul{
+                     li{
+                         .overAuto;
+                     }
+                 }
+                 
+
+                 li.rotante{
+
+                   .pad(12px 0 0 0);
+
+                 div.slide-bajo{
+
+                   position:relative !important;      
+
+                   .dim(100%,121px);
+            
+
+                          div.img-cont{
+
+                             .dim(100%,100%);
+
+                             a{
+                                       .dim(100%,100%);    
+ 
+                                 img{
+                                         .dim(100%,100%);
+                                          background-color:#fff;
+                                 }
+
+                            }
+
+
+                          }
+
+                          nav.controles{
+ 
+                        
+                             .posi(absolute);
+                             .dim(100%,47px);
+                             top:50%;
+                             margin-top:-23px;
+                             left:-1px;
+                             z-index:1000;                            
+              
+
+                             span{
+                                
+                                .sprite-;
+                                .dim(27px,43px);
+                                .scoor(-290px 0);
+                                cursor:pointer;
+                                .lft;                                                               
+
+                             }
+
+                             span.slider-sig{                                 
+
+                                    .scoor(-290px -43px);   
+                                    .rgt;
+
+                             }
+
+                          }
+
+                 }
+
+              }
+
+
+              li.parrafo{
+                  margin-top:50px;
+              }
+
+              li.tour{
+                   .overHidden;
+              }
+
+              li.boletin{
+                   
+                   .formulario-pila;
+                   .overHidden;  
+                   margin-top:27px;        
+
+                   h1{
+
+                      .col(@acolor);
+                      .bold(bolder);
+                      .fsiz(24px);
+                      .mayusculas;
+                      .tlf;       
+
+                   }
+
+                   input{
+                       margin-top:16px;
+                       width:295px;
+                   }
+
+                   input[type="text"]{
+
+                   
+                     .back(black);
+                     .curva(8px);
+                     border:none;
+                     .fsiz(12px);  
+                     .bold(bold);
+                     .pad(3px 5px);
+                     .col(#666666);
+
+                   }
+                 
+                   span{
+                      width:100% !important;
+                      display:inline;
+                   }
+
+                   input[type="submit"]{
+                           .submit-rosa;
+                            margin-left:121px;  
+                   }
+
+                   span.obligatorio{
+                        .col(@rosa-claro);
+                        .trg;
+                        
+                   }
+
+                   span.descripcion{
+                         margin-top:23px;
+                   }
+
+
+              }
+
+
+             }
+
+             div.item:first-child{
+                 margin-left:0;
+             }
+
+             div.-s{
+                  
+             }
+
+             aside{
+                .lft;
+                margin-left:28px;     
+                .dim(200px,auto);
+             }
+
+        }
+
+
+   }
+
+
+
+}
+
+//======================================================= PIE
+
+ footer{
+       .back(#990066);
+       .overAuto;       
+
+       *{
+          .col(white);         
+          font-weight:bold;
+          font-size:13px;
+       }
+
+       .cont{
+
+         .overAuto;
+         .overHidden;
+         height:62px;
+
+
+       span{
+  
+          .lh(5);
+       
+            .rgt;
+          
+            b,a{
+
+                 text-transform:uppercase;
+                 color:white !important;  
+                 display:inline;                            
+
+            }
+
+            a{
+                padding:0 3px;
+            }
+
+            .col(#da6dcb);
+
+
+        }
+
+        span:first-child{
+              .lft;
+
+        }
+
+      }
+
+
+       
+   }
+
+
+   .twtr-widget a{
+        
+        .lft;       
+
+   }
+
+   .twtr-widget em a{
+    margin-left:5px;
+   }
+
+   .twtr-widget a:first-child{
+         margin-left:0;
+   }
+
+  aside iframe #LikeboxPluginPagelet{
+       
+       background:white !important;
+
+   }

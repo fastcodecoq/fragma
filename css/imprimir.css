@@ -1,0 +1,10 @@
+
+body{
+    padding: 3cm;
+
+}
+
+nav.redes,span.construcion{
+    display: none !important;
+}
+

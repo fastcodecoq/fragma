@@ -1,0 +1,39 @@
+
+/* este css esta desarrollado por Gomosoft, quien como autor intelectual y propietario de estos derechos
+   prohíbe cualquier reproducción, copia, replica parcial o total de esta estructura de código en el lencguaje de cascada para
+   maquetació css */
+
+.left{
+    float: left !important;
+    display: block !important;
+}
+
+.right{
+    float: right !important;
+    display: block !important;
+}
+
+.tlf{
+    text-align: left !important;
+}
+
+.trg{
+    text-align: right !important;
+}
+
+.tcen{
+    text-align: center;
+}
+
+
+span,a{
+    display: block;
+}
+
+  a{
+      text-decoration: none;
+  }
+
+  .overauto{
+      overflow: auto !important;
+  }
