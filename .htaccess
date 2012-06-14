@@ -327,6 +327,9 @@ FileETag None
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
   RewriteEngine On
+
+  RewriteRule ^salas salas.php
+  RewriteRule ^inicio index.php
 </IfModule>
 
 
@@ -465,10 +468,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
   RewriteCond %{SCRIPT_FILENAME} -d
   RewriteCond %{SCRIPT_FILENAME} -f
   RewriteRule "(^|/)\." - [F]
-  RewriteRule ^inicio index.php
-  RewriteRule ^nosotros nosotros.php
-  RewriteRule ^clientes clientes.php
-  RewriteRule ^contacto contacto.php
+
 
 </IfModule>
 

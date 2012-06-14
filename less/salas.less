@@ -1,0 +1,81 @@
+
+@import "mixin.less";
+@import "vars.less";
+@import "clases.less";
+
+
+div.cols-cont{
+
+  padding: 40px 20px !important;
+
+  .-s{
+	
+     width:541px !important;    
+     padding:34px 0 0 25px !important;
+
+     figure.titulo{
+
+     	  span{ 
+     	  	     .sprite-;
+     	  	     .dim(535px,53px);
+     	  	     .scoor(-625px -255px);
+     	     }
+
+     }
+
+
+     p{
+
+               .tlg(justify);
+                .pad(53px 0 0 0);
+
+     	   b{
+     	   	    .col(white);
+     	   }
+     }
+
+     hgroup h1{
+     	   .col(white);
+     	   .fsiz(16px);
+     	   .mayusculas;
+     	   .ff(futuraStd);
+     	   .tlf;
+     	   margin-top:27px;
+     }
+
+     nav.menu-salas{
+
+     	margin-top:17px;
+
+     	ul { 
+    
+          li{
+                .lft;
+                margin-left:13px;
+
+                a{
+                	  .opac(0.80);
+                }
+
+                a:hover{
+                	  .opac(0.99);
+                }
+
+                a:active{
+                	    .opac(0.50);
+                }
+
+
+     	   }
+
+     	   li:first-child{
+     	   	     margin-left:0;
+     	   }
+          
+       }
+
+    }
+
+  } 
+
+}

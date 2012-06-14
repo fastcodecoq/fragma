@@ -53,7 +53,7 @@
               "baño" => new obj_linkeable($paths["slider-bajo"]."slider-b.jpg","Sala Principal","#!")
 
           ),
-        
+
          'slider-alto' => array(
                        
 
@@ -90,6 +90,7 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
     <link rel="stylesheet" type="text/css" href="css/ini.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/estilo-gomo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/salas.css" media="screen" />
 
     <link rel="shortcut icon" type="image/png"  href="favicon.png" />
 
@@ -123,8 +124,10 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                         });
 
                  $("iframe").ready(function(){  
-                     $("#LikeboxPluginPagelet").css({background:white});
+                     $("#LikeboxPluginPagelet").css({background:"white"});
                   });
+
+                 $(".cont").css({margin:"0 auto !important"});
 
                  
 
@@ -182,12 +185,29 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
                    <ul>
 
-                   <li>
-                      <figure><a href="<?php echo home; ?>"><span class="home"></span></a></figure>
+                   <li >
+                      <figure><a href="<?php echo home; ?>"><span class="home"></span></a></figure>                      
                     </li>
 
-                    <li>
+                    <li style="width:100px" class="salas">
                       <a href="<?php echo pri_href; ?>"><?php echo pri_name; ?></a>
+
+                        <ul>
+
+                             <li>
+                                <a href="<?php echo cross; ?>"><span></span> &nbsp; &nbsp; &nbsp;Crossover</a>
+                             </li>
+
+                             <li>                                 
+                                 <a href="<?php echo hip; ?>"><span></span>&nbsp; &nbsp; &nbsp;Hip House</a>
+                             </li>
+
+                             <li>                              
+                                 <a href="<?php echo indi; ?>"><span></span>&nbsp; &nbsp; &nbsp;Indie Lounge</a>
+                             </li>
+
+                        </ul>
+
                     </li>
 
                     <li>
@@ -218,56 +238,18 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
           <div id="centro">
 
- 
-                  <section id="info-centro">
+
+
+
+                     <section id="info-centro">
 
                     <div class="cont">
 
 
-
-                    <?php 
-
- 
                 
-                    if( count($obj_home) > 0 ){
-
-                        echo ' <div class="fiestas-cont">';
-
-                                foreach($obj_home["rumbas"] as $k => $obj){
-
-
-                                     echo '
-
-                       
-                             
-                             <div class="item">
-                              
-                               <figure>
-                                  <a href="'.$obj->href.'">
-                                    <img src="'.($obj->src).'" alt="'.$obj->title.'" />
-                                  </a>
-                               </figure>
-
-                             <a href="'.$obj->href.'" >
-
-                               <span>
-                                   '.$k.'                                    
-                               </span>
-
-                               </a>
-
-                             </div>';
-
-
-                                }
-
-                                echo '</div>';
-
-                              }
-
-
-                     ?>
-                   
+                          <figure class="txt-elig">
+                             <span class="texto-eliges"></span>
+                          </figure>
                    
       
                          
@@ -279,6 +261,8 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                       </div>
 
                   </section>
+
+                     
 
                   <section id="info-centro-baja">
                             
@@ -294,55 +278,13 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                                                     </figure>
                                                  </li>
 
-                                                 <li class="rotante">
+                                                
 
-                                                       <div class="slide-bajo">
+                                                 <li class="parrafo" style="margin-top:40px">
 
-                                                           <div class="img-cont">
-
-                                                             <?php
-
-
-                                                                  foreach ($obj_home["sliders"]["slider-bajo"] as $key => $value) {
-                                                                    
-                                                                              
-                                                 echo "<a href='{$value->href}' title='{$value->title}'>  <img src='{$value->src}' alt='' />  </a>";
-
-                                                                  }
-
-                                                             ?>
-
-
-                                                          </div>
-
-                                                            <nav class="controles">
-
-                                                                 <span class="slider-sig"></span>
-                                                                 <span class="slider-ant"></span>
-
-                                                            </nav>
-
-                                                      </div>
-
-                                                 </li>
-
-
-                                                 <li class="parrafo">
-
-                                                         <div class="nota">
-
-                                                               <?php
-
-                                                                 $obj_nota = $obj_home["texto"]["nota-col1-baja"];
-
-                                                                  if($obj_nota->title != "")
-                                                                       echo "<hgroup> <h1>{$obj_nota->title}</h1> </hgroup>";
-
-                                                                  echo $obj_nota->texto;
-
-                                                               ?>
-
-                                                         </div>
+                                                        <figure>
+                                                            <img src="img/salas-gente.jpg" alt="" width="308" heigh="335" />
+                                                        </figure>
 
                                                  </li>
 
@@ -350,95 +292,66 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                                           </div>
 
                                           <div class="item -s">
+
                                               <ul>
-                                                 <li class="tour">
+                                                 <li >
 
-                                                      <div class="caja-cute">
-                                                            <img src="img/tour.png" alt=""/>
-
-                                                            <a href="#!">
-                                                              <span class="tour"></span>
-                                                            </a>
-
-                                                     </div>
+                                                  <figure class="titulo">
+                                                    <span ></span>
+                                                  </figure>
 
                                                  </li>
                                                      
-                                                     <li class="boletin">
+                                                 <li >
                                                       
-                                                      <hgroup>
-                                                         <h1>suscríbete</h1>
-                                                     </hgroup>
+                                                   <p>
+                                                      <b class="ita">Fragma Club</b> está situado en Cartagena de Indias, Colombia, hace parte del Antiguo Cuartel de la Brigada de Artillería dando frente al Baluarte de
+                                                      la Cruz en la ciudad amurallada en el centro histórico de Cartagena.  La magia de Fragma  proviene gracias a la historia que poseen cada uno de los rincones donde se encuentra ubicado.
 
-                                                       <form >
+                                                      <br />  <br />
 
-                                                            <input type="text" value="*Nombre" name="nombre"/>
-                                                            <input type="text" value="*Email" name="correo"/>
-                                                            <input type="text" value="*Movil" name="movil"/>
-                                                            <input type="text" value="BB PIN" name="bbpin"/>
+                                                Nace por la idea de brindarle al público Cartagenero e internacional un lugar diferente y único, donde sus asistentes puedan disfrutar la mejor rumba con tres estilos y espacios distintos; contamos con tres salas: Indie Lounge, Crossover y Hip House, cada una de ellas con un estilo en particular. 
+                                                   </p>  
 
-                                                            <input type="submit" value="enviar" />
-                                                              <span class="obligatorio">* Campos Obligatorios</span>   
-                                                              <span class="descripcion">Suscríbete y recibe toda la información sobre los eventos, las pormociones y descuento que
- tendremos en el Club.</span>                                                      
-                                                       </form>
+                                                   <br />
 
-                                                     </li>
+                                                    <hgroup>
+                                                      <h1>conóce cada una de nuestras salas</h1>
+                                                    </hgroup>
+
+                                                    <nav class="menu-salas">
+
+                                                         <ul>
+                                                           
+                                                           <li>
+                                                              <a href="<?php echo cross; ?>">
+                                                                  <span class="crossover"></span>
+                                                              </a>
+                                                           </li>
+
+                                                           <li>
+                                                              <a href="<?php echo hip; ?>">
+                                                                  <span class="hip-house"></span>
+                                                              </a>
+                                                           </li>
+
+                                                           <li>
+                                                              <a href="<?php echo indi; ?>">
+                                                                  <span class="indie-lounge"></span>
+                                                              </a>
+                                                           </li>
+
+                                                          </ul>
+
+                                                    </nav>
+
+                                                 </li>
 
                                               </ul>
+
                                           </div>
 
-                                          <aside>
-                                              <ul>
-                                                 <li>
-
-                                                    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=213583211996075";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-                                                      <div style="background:white;width:199px; height:252px;" class="overAuto overHidden">
-                                                      <div class="fb-like-box" data-href="https://www.facebook.com/ClubFragmaCartagena" data-width="199" data-height="254" data-show-faces="true" data-stream="false" data-header="true"></div>
-                                                      </div>
-
-                                                  </li>
-
-                                                  <li style="margin-top:15px">
-                                                     <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 2,
-  interval: 30000,
-  width: 199,
-  height: 260,
-  theme: {
-    shell: {
-      background: '#333333',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#000000',
-      color: '#8c8c8c',
-      links: '#66ccff'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    behavior: 'all'
-  }
-}).render().setUser('fragmaclub1').start();
-</script>
-                                                  </li>
-                                              </ul>
-                                          </aside>
+                                          
 
                                   </div>
                               

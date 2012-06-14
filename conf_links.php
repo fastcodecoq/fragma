@@ -1,7 +1,7 @@
 <?php
 
 
-   define("home","#!");
+   define("home","inicio");
 
    define("twitter","http://twitter.com/#!/fragmaclub1");
    define("face","http://www.facebook.com/ClubFragmaCartagena");
@@ -9,7 +9,7 @@
    define("fsqr","http://www.youtube.com/fragmaclub");
 
    define("pri_name","salas");
-   define("pri_href","#!");
+   define("pri_href","salas");
 
    define("seg_name","eventos");
    define("seg_href","#!");
