@@ -120,7 +120,7 @@
 		background-image: -moz-linear-gradient(top, @de @per,@hasta @_per);
 		background-image: -khtml-gradient(linear,left top,left bottom,from( @de ),to @hasta)  !important;
 		background-image: -o-linear-gradient( @de,@hasta) !important ;
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@de, endColorstr=@hasta) !important;	
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=@de, endColorstr=@hasta);	
 }
 
 .curva(@val){
@@ -147,3 +147,7 @@
 	    margin-left: @w;
 	    margin-top: @h;
 }
+
+.zin(@z){
+	  z-index:@z;
+ }

@@ -53,7 +53,7 @@
               "baño" => new obj_linkeable($paths["slider-bajo"]."slider-b.jpg","Sala Principal","#!")
 
           ),
-
+        
          'slider-alto' => array(
                        
 
@@ -182,29 +182,12 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
                    <ul>
 
-                   <li >
-                      <figure><a href="<?php echo home; ?>"><span class="home"></span></a></figure>                      
+                   <li>
+                      <figure><a href="<?php echo home; ?>"><span class="home"></span></a></figure>
                     </li>
 
-                    <li style="width:100px" class="salas">
+                    <li>
                       <a href="<?php echo pri_href; ?>"><?php echo pri_name; ?></a>
-
-                        <ul>
-
-                             <li>
-                                <a href=""><span></span> &nbsp; &nbsp; &nbsp;Crossover</a>
-                             </li>
-
-                             <li>                                 
-                                 <a href=""><span></span>&nbsp; &nbsp; &nbsp;Hip House</a>
-                             </li>
-
-                             <li>                              
-                                 <a href=""><span></span>&nbsp; &nbsp; &nbsp;Indie Lounge</a>
-                             </li>
-
-                        </ul>
-
                     </li>
 
                     <li>

@@ -256,9 +256,9 @@ header{
 	width:100%;
 
 	ul{
-	   .cont;
-	   .overAuto;
 
+	   .cont;
+      height:27px;
 
              li{
                  .lft;  
@@ -266,14 +266,14 @@ header{
 
                  a,a *{
                     color:@acolor !important;
-                 }          
+                 }   
 
-  
+                  position:relative;
+                              
 
              }
 
-
-
+            
 	  }
 
  }
@@ -331,12 +331,15 @@ header{
 
        }
 
-     ul{          
+     ul{  
+
+     
 
          li{
 
-            margin-left:22px !important;
+            margin-left:15px !important;
             padding:0 10px;
+            position: relative;
 
              span.home{
 
@@ -364,6 +367,63 @@ header{
                   .tsha(0 2px 3px rgb(100,100,100));
                }
 
+                 ul{
+                                    
+                      position:absolute !important;
+                      left:-2000em;
+                      .back(red);
+                      width:100%;
+                      height:auto;  
+                      z-index:1000;                    
+
+                       li{
+                            float: none !important;  
+                            margin: 0 !important;
+                            .dim(100%,auto);
+                            .back(#cd0067);
+                            .pad(0);  
+                            border-top:1px solid black;                          
+
+                            a{
+                                                                  
+                                 .fsiz(13px);
+                                 .tlg(left);                                 
+                                 .col(#ccccce);
+                                 .posi(relative);                                                   
+
+                                 span{
+
+                                     .posi(absolute);
+                                     .sprite-;
+                                      margin:3px 0 0 3px;
+                                      width:15px;
+                                      height:15px;
+                                     .scoor(-80px -42px);
+                                     .zin(1000);                                       
+
+                                 }
+
+                            }
+                       }
+
+                       li:hover{
+                            .back(#990134);
+                       }
+
+                       li:hover > a span{
+                            .scoor(-98px -41px);
+                       }
+
+                       li:active > a span{
+                            .scoor(-96px -42px);          
+                       }
+
+                       li:first-child{
+                           border-top: none;
+                       }
+
+                  }  
+
            }
 
          li:first-child{            
@@ -376,6 +436,17 @@ header{
          li:hover{
              .back(url("../img/hover-menu.png"));
          }
+
+         li.salas:hover{
+               .grad(#980065,#000000,0%,100%);
+               filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#980065, endColorstr=#000000); 
+         }
+
+
+          li:hover > ul{
+                   left:0;
+             }
+
 
        
      }
