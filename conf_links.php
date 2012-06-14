@@ -30,6 +30,11 @@
      define("gomosoft","http://gomosoft.com");
 
 
+     define("cross","crossover");
+     define("hip","hip_house");
+     define("indi","indie_lounge");
+
+
      $paths = array(
 
              "rumbas" => "img/rumbas/",

@@ -192,15 +192,15 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                         <ul>
 
                              <li>
-                                <a href=""><span></span> &nbsp; &nbsp; &nbsp;Crossover</a>
+                                <a href="<?php echo cross; ?>"><span></span> &nbsp; &nbsp; &nbsp;Crossover</a>
                              </li>
 
                              <li>                                 
-                                 <a href=""><span></span>&nbsp; &nbsp; &nbsp;Hip House</a>
+                                 <a href="<?php echo hip; ?>"><span></span>&nbsp; &nbsp; &nbsp;Hip House</a>
                              </li>
 
                              <li>                              
-                                 <a href=""><span></span>&nbsp; &nbsp; &nbsp;Indie Lounge</a>
+                                 <a href="<?php echo indi; ?>"><span></span>&nbsp; &nbsp; &nbsp;Indie Lounge</a>
                              </li>
 
                         </ul>
