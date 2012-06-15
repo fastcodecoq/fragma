@@ -236,29 +236,29 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
           </header>             
 
-          <div id="centro">
+          <div id="centro" sty>
 
 
 
 
-                     <section id="info-centro">
+                     <section id="info-centro" >
 
-                    <div class="cont">
+                    <div class="cont" >
 
 
-                
+                <div class="cont-text overAuto" >
                           <figure class="txt-elig">
                              <span class="texto-eliges"></span>
                           </figure>
+                </div>
                    
-      
-                         
+                               
                             
                           <div class="img-cont">
                             <img src="img/pareja.png" alt="" height="448" class="slide"/>
                           </div>
 
-                      </div>
+                   </div>
 
                   </section>
 
