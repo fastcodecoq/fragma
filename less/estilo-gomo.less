@@ -126,8 +126,8 @@ header{
          li{
 
             margin-left:15px !important;
-            padding:0 10px;
-            position: relative;
+            padding:0 10px;        
+            z-index:2000;            
 
              span.home{
 
@@ -158,11 +158,10 @@ header{
                  ul{
                                     
                       position:absolute !important;
-                      left:-2000em;
-                      .back(red);
+                      left:-2000px;                      
                       width:100%;
                       height:auto;  
-                      z-index:1000;                    
+                      -webkit-transition: all 0.20s;                                       
 
                        li{
                             float: none !important;  
@@ -222,8 +221,14 @@ header{
          }
 
          li:hover{
-             .back(url("../img/hover-menu.png"));
+             .back(url("../img/hover-menu.png"));             
          }
+
+            li:hover>ul{                                                                                          
+                 left:0 !important; 
+                 display: block;
+                                     
+             }
 
          li.salas:hover{
                .grad(#980065,#000000,0%,100%);
@@ -231,9 +236,7 @@ header{
          }
 
 
-          li:hover > ul{
-                   left:0;
-             }
+       
 
 
        
@@ -394,6 +397,15 @@ div#centro{
 
               li.parrafo{
                   margin-top:50px;
+
+                  h1{
+                         .fsiz(20px);
+                         .bold(bold);
+                         .pad(0 0 25px 0);
+                         .col(white);
+                         .mayusculas;
+                  }
+
               }
 
               li.tour{

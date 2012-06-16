@@ -96,8 +96,7 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
     <link rel="canonical" href="http://fragmaclub.com/" />
 
-     <script type="text/javascript" src="js/jquery.js"></script>
-     <script type="text/javascript" src="js/less.js"></script>
+     <script type="text/javascript" src="js/jquery.js"></script>     
      <script type="text/javascript" src="js/modernizr.js"></script>
      <script type="text/javascript" src="js/carousel.js"></script>
 
@@ -114,20 +113,6 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
          $(window).load(function(){    
 
-                 $(".slide-bajo .img-cont").cycle({ 
-                           fx:     'fade', 
-                           speed:  'slow', 
-                           timeout: 6000, 
-                           next:   '.slide-bajo .controles .slider-sig', 
-                           prev:   '.controles .slider-ant',
-                           pause:1
-                        });
-
-                 $("iframe").ready(function(){  
-                     $("#LikeboxPluginPagelet").css({background:"white"});
-                  });
-
-                 $(".cont").css({margin:"0 auto !important"});
 
                  
 
@@ -236,7 +221,7 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
 
           </header>             
 
-          <div id="centro" sty>
+          <div id="centro" >
 
 
 
@@ -255,7 +240,7 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                                
                             
                           <div class="img-cont">
-                            <img src="img/pareja.png" alt="" height="448" class="slide"/>
+                            <img src="img/discos.png" alt="" height="448" class="slide"/>
                           </div>
 
                    </div>
@@ -283,7 +268,7 @@ experiencias, los buenos momentos. Luces, música, libertad y mucha diversión. 
                                                  <li class="parrafo" style="margin-top:40px">
 
                                                         <figure>
-                                                            <img src="img/salas-gente.jpg" alt="" width="308" heigh="335" />
+                                                            <img src="img/salas-gente.jpg" alt="" width="308" height="335" />
                                                         </figure>
 
                                                  </li>
